@@ -4,6 +4,11 @@
 
 ## Screens
 
+the Directs links gif does not work? look at the flow of the app in the following links
+
+- https://i.ibb.co/qnnykSy/ezgif-1-194d6c96ea.gif
+- https://imagizer.imageshack.com/img922/5083/MZUDJ9.gif
+
 <p style="text-align: center;"><img src="https://i.ibb.co/qnnykSy/ezgif-1-194d6c96ea.gif" width="400"></p>
 
 ## Description
