@@ -1,4 +1,4 @@
-import BaseEntity from './base-entity';
+import {BaseEntity} from './base-entity';
 
 // Tests that tojson() handles nested objects and arrays. tags: [happy path, edge case]
 it('test_to_json_handles_nested_objects_and_arrays', () => {

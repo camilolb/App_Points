@@ -4,7 +4,7 @@
 
 ## Screens
 
-<p style="text-align: center;"><img src="https://imagizer.imageshack.com/img924/3346/1DOqA0.gif" width="400"></p>
+<p style="text-align: center;"><img src="https://im5.ezgif.com/tmp/ezgif-5-9a04289490.gif" width="400"></p>
 
 ## Description
 
@@ -13,6 +13,8 @@ This project aims to create a login with firebase and bring a list of products w
 ## Project Structure
 
 The project structure is
+
+In core we find all the business logic. In mobile we find components in mobile-ui all components are reusable anywhere
 
 ```
 project
@@ -46,11 +48,19 @@ Finally, there is the "shared" folder that contains files that can be shared bet
 
 this architecture in a React Native project follows the pattern of separation of responsibilities and aims to have a high degree of modularity to facilitate project maintenance and scalability.
 
-<p style="text-align: center;"><img src="https://sixphere.com/wp-content/uploads/2021/09/4c56a51a-964d-4546-b8e0-0e658535e87c.png" width="400"></p>
+<p style="text-align: center;"><img src="https://miro.medium.com/v2/resize:fit:4800/format:webp/1*NfFzI7Z-E3ypn8ahESbDzw.png" width="400"></p>
 
-## stack
+## Configuration
 
-Project is created using `Typescript, yarn, jotai, useQuery, Eslint, prettier, clean code, firebase, test`
+in the .env file you configure the endpoints and the firebase configuration with your own credentials if desired
+API_URL=''
+FIREBASE_API_KEY=''
+FIREBASE_AUTH_DOMAIN=''
+FIREBASE_ID=''
+
+## Libraries and TS
+
+Project is created using `Typescript, yarn, jotai, useQuery, Eslint, prettier, clean code,  firebase, test, formik, luxon, yarn, navigation, storage`
 
 ## Dependencies
 

@@ -7,24 +7,27 @@ it('test_get_products_successfully_retrieves_and_returns_all_products', async ()
   const mockProducts: IProductEntity[] = [
     {
       Id: '1',
-      Name: 'Product 1',
-      Price: '10.00',
-      Stock: '5',
+      Product: 'Product 1',
+      Points: 10,
       Image: 'image1.jpg',
+      CreatedAt: '2022-01-01',
+      IsRedemption: true,
     },
     {
       Id: '2',
-      Name: 'Product 2',
-      Price: '20.00',
-      Stock: '10',
+      Product: 'Product 2',
+      Points: 20,
       Image: 'image2.jpg',
+      CreatedAt: '2022-01-02',
+      IsRedemption: false,
     },
     {
       Id: '3',
-      Name: 'Product 3',
-      Price: '30.00',
-      Stock: '15',
+      Product: 'Product 3',
+      Points: 30,
       Image: 'image3.jpg',
+      CreatedAt: '2022-01-03',
+      IsRedemption: true,
     },
   ];
   const mockStoreRepo: IStoreRepository = {

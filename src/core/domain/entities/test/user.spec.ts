@@ -7,6 +7,7 @@ it('test_user_creation_with_valid_data', () => {
     email: 'test@test.com',
     nickname: 'testuser',
     image: 'testimage.jpg',
+    token: '123',
   };
   const user = new User(userData);
   expect(user.Email).toBe('test@test.com');
@@ -16,20 +17,22 @@ it('test_user_creation_with_valid_data', () => {
 
 // Tests that a user entity cannot be created with empty or whitespace-only email, nickname, or image data. tags: [edge case]
 it('test_user_creation_with_empty_or_whitespace_only_data', () => {
-  const userData: IUserEntityData = {
+  const userData: any = {
     email: '',
     nickname: '   ',
     image: 'testimage.jpg',
+    token: '123',
   };
   expect(() => new User(userData)).toThrow();
 });
 
 // Tests that the email, nickname, and image properties of a user entity can be retrieved even if they have null or undefined values. tags: [edge case]
 it('test_user_properties_retrieval_with_null_or_undefined_values', () => {
-  const userData: IUserEntityData = {
+  const userData: any = {
     email: null,
-    nickname: undefined,
+    nickname: '',
     image: 'testimage.jpg',
+    token: null,
   };
   const user = new User(userData);
   expect(user.Email).toBeNull();
@@ -43,6 +46,7 @@ it('test_user_email_format_validation', () => {
     email: 'invalidemail',
     nickname: 'testuser',
     image: 'https://example.com/image.jpg',
+    token: '123',
   };
   expect(() => new User(userData)).toThrowError('Invalid email format');
 });
@@ -53,6 +57,7 @@ it('test_user_nickname_length_validation', () => {
     email: 'testuser@example.com',
     nickname: 'thisnicknameistoolong',
     image: 'https://example.com/image.jpg',
+    token: '123',
   };
   expect(() => new User(userData)).toThrowError('Nickname is too long');
 });
@@ -63,6 +68,7 @@ it('test_user_image_url_format_validation', () => {
     email: 'testuser@example.com',
     nickname: 'testuser',
     image: 'invalidurl',
+    token: '123',
   };
   expect(() => new User(userData)).toThrowError('Invalid image URL format');
 });

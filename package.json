@@ -10,6 +10,8 @@
     "test": "jest"
   },
   "dependencies": {
+    "@babel/plugin-proposal-private-methods": "^7.18.6",
+    "@babel/plugin-transform-modules-commonjs": "^7.21.2",
     "@react-native-async-storage/async-storage": "^1.18.1",
     "@react-native-firebase/app": "^17.4.0",
     "@react-native-firebase/auth": "^17.4.0",
@@ -51,6 +53,7 @@
   },
   "devDependencies": {
     "@babel/core": "^7.20.0",
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.0",
     "@babel/preset-env": "^7.20.0",
     "@babel/runtime": "^7.20.0",
     "@react-native-community/eslint-config": "^3.2.0",
@@ -74,8 +77,5 @@
     "react-native-dotenv": "^3.4.8",
     "react-test-renderer": "18.2.0",
     "typescript": "4.8.4"
-  },
-  "jest": {
-    "preset": "react-native"
   }
 }
