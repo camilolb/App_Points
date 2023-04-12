@@ -4,7 +4,7 @@
 
 ## Screens
 
-<p style="text-align: center;"><img src="https://imagizer.imageshack.com/img922/5083/MZUDJ9.gif" width="400"></p>
+<p style="text-align: center;"><img src="https://i.ibb.co/qnnykSy/ezgif-1-194d6c96ea.gif" width="400"></p>
 
 ## Description
 
