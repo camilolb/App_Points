@@ -27,6 +27,10 @@ export function HomePagePresenter({navigation}: Props) {
     setShowRedeemedProducts(showRedeemed);
   };
 
+  const handleGoToProfile = () => {
+    navigation.navigate('ProfilePage');
+  };
+
   useFocusEffect(
     React.useCallback(() => {
       setLoading(isLoading);
@@ -40,6 +44,7 @@ export function HomePagePresenter({navigation}: Props) {
       sumRedemptionPoints={sumRedemptionPoints(data)}
       onHandleFilterProducts={onHandleFilterProducts}
       showRedeemedProducts={showRedeemedProducts}
+      handleGoToProfile={handleGoToProfile}
     />
   );
 }

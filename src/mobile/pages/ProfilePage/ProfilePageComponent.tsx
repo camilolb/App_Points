@@ -22,7 +22,7 @@ export function ProfilePageComponent({
           showGoBackButton: true,
           title: 'Profile',
           titleCenter: true,
-          blackHeader: true,
+          blueHeader: true,
         }}
       />
       <ScrollView style={styles.containerScrollView}>
@@ -58,7 +58,7 @@ export function ProfilePageComponent({
       <View style={styles.logoutButtonContainer}>
         <Button
           label={'Logout'}
-          type={'black'}
+          type={'blue'}
           containerStyles={styles.buttonLogout}
           onPress={onHandleLogout}
         />

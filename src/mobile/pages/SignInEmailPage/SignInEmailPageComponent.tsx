@@ -7,11 +7,7 @@ import {useFormikContext} from 'formik';
 import {SignInEmailFormProps} from './SignInEmailPagePresenter';
 import {Button, Label, TextField} from '../../mobile-ui';
 
-type Props = {
-  toggleDesign: () => void;
-};
-
-export function SignInEmailPageComponent({toggleDesign}: Props) {
+export function SignInEmailPageComponent() {
   const {values, handleChange, handleSubmit, handleBlur, errors} =
     useFormikContext<SignInEmailFormProps>();
 

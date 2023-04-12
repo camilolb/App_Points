@@ -3,7 +3,7 @@ import {Button, Label} from '../../mobile-ui';
 import styles from './HomePage.styles';
 import {IProductEntity} from '../../../core/domain';
 import {ProductInformationItem} from '../../../shared';
-import {View, FlatList} from 'react-native';
+import {View, FlatList, Pressable} from 'react-native';
 
 type Props = {
   onHandleEdit: (product?: IProductEntity) => void;
@@ -11,6 +11,7 @@ type Props = {
   sumRedemptionPoints: string;
   onHandleFilterProducts: (showRedeemed?: boolean) => void;
   showRedeemedProducts?: boolean;
+  handleGoToProfile: () => void;
 };
 
 export function HomePageComponent({
@@ -19,6 +20,7 @@ export function HomePageComponent({
   sumRedemptionPoints,
   onHandleFilterProducts,
   showRedeemedProducts,
+  handleGoToProfile,
 }: Props) {
   return (
     <View style={styles.container}>
@@ -26,9 +28,11 @@ export function HomePageComponent({
         <Label color={'black'} fontWeight={'bold'} type={'h2'}>
           Bienvenido de vuelta!
         </Label>
-        <Label type={'h4'} fontWeight={'300'} style={styles.headerText}>
-          Ruben Rodriguez
-        </Label>
+        <Pressable onPress={handleGoToProfile}>
+          <Label type={'h4'} fontWeight={'300'} style={styles.headerText}>
+            Ruben Rodriguez
+          </Label>
+        </Pressable>
       </View>
       <View style={styles.pointsCardContainer}>
         <Label type={'h4'} fontWeight={'bold'} color={'silver'}>
