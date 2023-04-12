@@ -12,14 +12,14 @@ const styles = EStyleSheet.create({
     marginTop: '20rem',
   },
   textColor: {
-    placeholderTextColor: '$white',
+    placeholderTextColor: 'silver',
     opacity: 1,
   },
   textField: {
     fontSize: '$fontSizeH3',
-    fontWeight: '$fontWeight400',
+    fontWeight: '$fontWeight500',
     flex: 1,
-    color: '$black',
+    color: '$white',
   },
   textFieldSearch: {
     flex: 1,
@@ -40,7 +40,8 @@ const styles = EStyleSheet.create({
     marginRight: '$middleSpace',
   },
   errorText: {
-    color: '$black',
+    color: '$red',
+    fontWeight: 'bold',
   },
   searchIcon: {
     marginRight: '$middleSpace',

@@ -1,12 +1,11 @@
 import React from 'react';
 import styles from './SignInEmailPage.styles';
-import {Image, ImageBackground, ScrollView, View} from 'react-native';
+import {Image, ScrollView, View} from 'react-native';
 import {Images} from '../../mobile-ui/assets/images';
 import {SafeAreaView} from 'react-native-safe-area-context';
 import {useFormikContext} from 'formik';
 import {SignInEmailFormProps} from './SignInEmailPagePresenter';
 import {Button, Label, TextField} from '../../mobile-ui';
-import LinearGradient from 'react-native-linear-gradient';
 
 type Props = {
   toggleDesign: () => void;
@@ -18,17 +17,7 @@ export function SignInEmailPageComponent({toggleDesign}: Props) {
 
   return (
     <>
-      <ImageBackground
-        source={Images.gradientBackground}
-        style={styles.container}>
-        <LinearGradient
-          angle={180}
-          colors={['rgba(0, 0, 0, 0.5)', '#000000']}
-          end={{x: 0, y: 1}}
-          locations={[0, 1]}
-          start={{x: 0, y: 0}}
-          style={styles.linearGradient}
-        />
+      <View style={styles.container}>
         <ScrollView contentContainerStyle={styles.scrollView}>
           <SafeAreaView edges={['top']}>
             <View style={styles.logoContainer}>
@@ -68,7 +57,7 @@ export function SignInEmailPageComponent({toggleDesign}: Props) {
             <Button label={'Log In'} onPress={handleSubmit} />
           </SafeAreaView>
         </ScrollView>
-      </ImageBackground>
+      </View>
     </>
   );
 }

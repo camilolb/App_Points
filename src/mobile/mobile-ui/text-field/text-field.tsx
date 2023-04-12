@@ -31,6 +31,7 @@ export function TextField({
         <TextInput
           {...props}
           secureTextEntry={!showPassword}
+          placeholderTextColor={styles.textColor.placeholderTextColor}
           style={styles.textField}
         />
         {isPassword && (
